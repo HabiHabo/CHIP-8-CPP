@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/dijar/Projects/sdl2_demo/build",
-  "command": "/usr/lib64/ccache/c++   -g -o CMakeFiles/sdl2_demo.dir/src/main.cpp.o -c /home/dijar/Projects/sdl2_demo/src/main.cpp",
-  "file": "/home/dijar/Projects/sdl2_demo/src/main.cpp",
-  "output": "CMakeFiles/sdl2_demo.dir/src/main.cpp.o"
-}
-]
