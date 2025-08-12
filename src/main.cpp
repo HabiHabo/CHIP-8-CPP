@@ -1,3 +1,5 @@
+#define SDL_MAIN_HANDLED
+
 #include "tinyfiledialogs.h"
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -6,11 +8,22 @@
 #include "chip8_core/core.h"
 #include <vector>
 
-// For building, use this in terminal in the src folder:
-// g++ main.cpp -o main `sdl2-config --cflags --libs`
+/*
+For building for linux, use this in terminal (I used g++ compiler):
+g++ src/main.cpp src/tinyfiledialogs.cpp chip8_core/core.cpp -I. -o main `sdl2-config --cflags --libs`
 
-//Then run this:
-//./main
+Then run this:
+./main
+
+For building for windows, the command is slightly longer. Use this:
+x86_64-w64-mingw32-g++ \
+  src/main.cpp src/tinyfiledialogs.cpp chip8_core/core.cpp \
+  -I. \
+  -I ~/Projects/SDL2-2.32.6/x86_64-w64-mingw32/include \
+  -L ~/Projects/SDL2-2.32.6/x86_64-w64-mingw32/lib \
+  -o main.exe \
+  -lmingw32 -lSDL2 -lole32 -mwindows
+*/
 
 const uint32_t SCALE = 15;
 const uint32_t WINDOW_WIDTH = SCREEN_WIDTH * SCALE;

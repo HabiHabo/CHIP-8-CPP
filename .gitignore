@@ -1,44 +1,14 @@
-# Prerequisites
-*.d
+# Ignore everything
+/*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# But don't ignore these directories:
+!src/
+!chip8_core/
 
-# Precompiled Headers
-*.gch
-*.pch
+# And don't ignore these files:
+!.gitignore
+!CMakeLists.txt
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
-
-.vscode/
-build/
+# Also make sure to not ignore files inside those folders:
+src/**
+chip8_core/**
