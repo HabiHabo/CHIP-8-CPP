@@ -8,6 +8,7 @@
 # And don't ignore these files:
 !.gitignore
 !CMakeLists.txt
+!SDL2.dll
 
 # Also make sure to not ignore files inside those folders:
 src/**
